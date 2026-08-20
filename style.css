@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    z-index: 2;
+}
+
+.page {
+    display: none;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 25px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    animation: fadeIn 0.5s ease;
+}
+
+.page.active {
+    display: block;
+}
+
+.emoji {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.small {
+    font-size: 14px;
+    color: #888;
+}
+
+.progress {
+    font-size: 12px;
+    color: #ff4f70;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 14px;
+    background: #ff5277;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    background: #ff315e;
+}
+
+.choices {
+    margin-top: 25px;
+}
+
+.choices button {
+    background: #fff0f3;
+    color: #ff4269;
+    border: 2px solid #ffd1db;
+}
+
+.choices button:hover {
+    background: #ff5277;
+    color: white;
+}
+
+.confession {
+    background: #fff3f6;
+    border-radius: 18px;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+.confession h2 {
+    color: #ff3f68;
+}
+
+.no-button {
+    background: #ddd;
+    color: #555;
+    position: relative;
+}
+
+.no-button:hover {
+    background: #ccc;
+}
+
+.big-heart {
+    font-size: 90px;
+    animation: heartbeat 1s infinite;
+}
+
+.success h1 {
+    color: #ff3f68;
+}
+
+.final-text {
+    font-weight: bold;
+    color: #ff3f68;
+    font-size: 18px;
+}
+
+/* Floating hearts */
+
+.hearts {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+    font-size: 20px;
+    animation: floatUp linear forwards;
+    opacity: 0.7;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .page {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+}

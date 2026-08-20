@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebuah Pertanyaan❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <body>
+
+    <audio id="bgMusic" loop>
+        <source src="2001x.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="hearts"></div>
+
+    <main class="container">
+
+    <div class="hearts"></div>
+
+    <main class="container">
+
+        <!-- OPENING -->
+        <section class="page active" id="page1">
+            <div class="emoji">👀</div>
+
+            <h1>Hei, wawa...</h1>
+
+            <p>
+                Jangan kaget ya, aku specially 
+                Bikin ini untuk kamu wawa
+            </p>
+
+            <p class="small">
+                Tapi sebelumnya, aku punya mini game ni buat kamu
+            </p>
+
+            <button onclick="startExperience()">
+                Boleh, coba aja 😳
+            </button>
+
+            <button id="musicButton" onclick="toggleMusic()">
+            🔊 Music
+            </button>
+
+
+        <!-- QUIZ 1 -->
+        <section class="page" id="page2">
+
+            <div class="progress">QUESTION 1 / 3</div>
+
+            <h2>Menurut kamu...</h2>
+
+            <p>
+                Seberapa seru sih kalau kita yap yapp?
+            </p>
+
+            <div class="choices">
+                <button onclick="answer(3)">B aja 😐</button>
+                <button onclick="answer(4)">Lumayan 😌</button>
+                <button onclick="answer(5)">Seru banget 😳</button>
+            </div>
+
+        </section>
+
+
+        <!-- QUIZ 2 -->
+        <section class="page" id="page3">
+
+            <div class="progress">QUESTION 2 / 3</div>
+
+            <h2>Kalau misal kita jarang ketemu...</h2>
+
+            <p>
+                Perasaan kamu,
+                kamu bakal gimana?
+            </p>
+
+            <div class="choices">
+                <button onclick="answer(4)">Biasa aja sih 🤔</button>
+                <button onclick="answer(5)">Gapapa aku ngerti 😌</button>
+                <button onclick="answer(5)">Sedih,Kangen,Mw ketemuu teruss 😭</button>
+            </div>
+
+        </section>
+
+
+        <!-- QUIZ 3 -->
+        <section class="page" id="page4">
+
+            <div class="progress">QUESTION 3 / 3</div>
+
+            <h2>Pertanyaan terakhir...</h2>
+
+            <p>
+                Kamu maukah nerima aku apa adanya?
+                kamu tau kan aku gimana?
+            </p>
+
+            <div class="choices">
+                <button onclick="nextPage(5)">
+                    Eumm gatau ya 👀
+                </button>
+
+                <button onclick="nextPage(5)">
+                    iyaa aku ga masalah 😌
+                </button>
+
+                <button onclick="nextPage(5)">
+                    gapapa, intinya mau kamu! 😳
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- CONFESSION -->
+        <section class="page" id="page5">
+
+            <div class="emoji">❤️</div>
+
+            <h1>Eummm...</h1>
+
+            <p>
+                Sebenarnya semua pertanyaan tadi
+                cuma alasan aku buat sampai ke sini.
+            </p>
+
+            <p>
+                Ada sesuatu yang mau aku bilang.
+            </p>
+
+            <div class="confession">
+                <h2>Aku suka sama kamu.</h2>
+
+                <p>
+                    Aku nggak tahu sejak kapan tepatnya,
+                    tapi aku selalu seneng BNGT kalau ngobrol,
+                    ketemu, atau sekadar tahu kabar kamu, wajah kamu,
+                    Suara kamu, All about you,I Like you,
+                    Just the way u are. Makasih banyak selalu Support Aku
+                    Semangatin aku, Selalu ada buat aku❤️
+                </p>
+
+                <p>
+                    
+                    There's actually one thing I've been wanting to tell you
+                </p>
+
+                <h2>
+                    Would you give me a chance?
+
+                    Kamu,Mauga Jadi Pacar Aku?❤️
+                    pls jangan NO...😭
+                </h2>
+            </div>
+
+            <button onclick="yesAnswer()">
+                YES ❤️
+            </button>
+
+            <button class="no-button" id="noButton">
+                NO 😭
+            </button>
+
+        </section>
+
+
+        <!-- SUCCESS -->
+        <section class="page" id="page6">
+
+            <div class="success">
+                <div class="big-heart">❤️</div>
+
+                <h1>YAY!!!</h1>
+
+                <h2>Mission Complete 🎉</h2>
+
+                <p>
+                    Mulai hari ini,
+                    aku punya alasan baru buat senyum.
+                    You've officially made my day!
+                </p>
+
+                <p class="final-text">
+                    Thank you for choosing me ❤️
+                    Loveyouu❤️
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
